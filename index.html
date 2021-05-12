@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="survey.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <div class="container ">
+        <header class="header">
+            <h1 id="title">
+                Happiness Survey
+            </h1>
+           
+        </header>
+        <form action="" id="survey-form">
+
+            <!-- Text section -->
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" class="formControl" placeholder="Enter your name" required>
+            </div>
+            <!-- end of text section -->
+
+            <!-- Type Email section -->
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name= "email" id="email" class="formControl" placeholder="Enter your Email" required>
+            </div>
+            <!-- end of Email section -->
+
+            <!-- Type Number section -->
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="number" name="phone" id="phone" class="formControl" placeholder="Enter your phone number" required>
+            </div>
+            <!-- end of Number section -->
+
+            <!-- Type Number section -->
+            <div class="form-group">
+                <label for="address">Address <span class="clue">(optional)</span></label>
+                <input type="text" name="address" id="address" class="formControl" placeholder="Enter your address">
+            </div>
+            <!--  end of number section -->
+
+            <!-- select section -->
+            <div class="form-group">
+                <p id="quest">what do you do?</p><br>
+                <select name="role" required id="dropdown" class="formControl">
+                    <option value disabled selected >Select current role</option>
+                    <option value="student">Student</option>
+                    <option value="job">Job</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+        
+
+              <div class="form-group">
+                <p id="quest">Are you happy in your Life?? </p><br>
+                <label for="">
+                    <input type="radio" name="source"  value="Most Often"
+                    class="inputRadio"
+                     > Most Often
+                </label>
+                <label for="">
+                    <input type="radio" name="source"  value="quite often"
+                   
+                    class="inputRadio"
+                    >quite often
+                </label>
+                <label for="">
+                    <input type="radio" name="source"  value="Sometimes"
+                    class="inputRadio"
+                    > Sometimes
+                </label>
+                <label for="">
+                    <input type="radio" name="source" value="Not at all"
+                    class="inputRadio"
+                    > Not at all
+                </label>
+              
+            </div>
+           
+            <div class="form-group">
+                <p id="quest">If Unhappy,what are the reasons? </p><br>
+                <label for="">
+                  <input type="radio" name="source"  value="Health"
+                  class="inputRadio"
+                   > Health
+              </label>
+              <label for="">
+                  <input type="radio" name="source"  value="Job/Carreer"
+                 
+                  class="inputRadio"
+                  >Job/Carreer
+              </label>
+              <label for="">
+                  <input type="radio" name="source"  value="Family/Friends"
+                  class="inputRadio"
+                  > Family/Friends
+              </label>
+              <label for="">
+                  <input type="radio" name="source" value="Other"
+                  class="inputRadio"
+                  > Other
+              </label>
+            </div>
+            
+
+            <div class="form-group">
+              <p id="quest">What do you want in your Life? </p><br>
+              <label for="">
+                <input type="radio" name="source"  value="A good job"
+                class="inputRadio"
+                 > A good job
+            </label>
+            <label for="">
+                <input type="radio" name="source"  value="Love/Friends"
+               
+                class="inputRadio"
+                >Love/Friends
+            </label>
+            <label for="">
+                <input type="radio" name="source"  value="Peace"
+                class="inputRadio"
+                > Peace
+            </label>
+            <label for="">
+                <input type="radio" name="source" value="Other"
+                class="inputRadio"
+                > Other
+            </label>
+          </div>
+
+           
+            <div class="form-group">
+                <button type="submit" id="submit" class="btn">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+      
